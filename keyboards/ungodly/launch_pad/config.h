@@ -15,7 +15,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #pragma once
 
 #include "config_common.h"
-#define OLED_FONT_H "keyboards/ungodly/launch_pad/keymaps/default/glcdfont.c"
 
 /* USB Device descriptor parameter */
 #define VENDOR_ID       0x5544 // "UD" = Ungodly Design

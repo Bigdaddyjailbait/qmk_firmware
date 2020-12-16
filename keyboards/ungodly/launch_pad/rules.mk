@@ -28,5 +28,6 @@ SPACE_CADET_ENABLE = no
 MAGIC_ENABLE = no
 GRAVE_ESC_ENABLE = no
 LTO_ENABLE = yes
+VIA_ENABLE = yes
 
 SRC += analog.c

@@ -75,13 +75,14 @@ See the [build environment setup](https://docs.qmk.fm/#/getting_started_build_to
 
 # Custom OLED Displays
 
-* These instructions require compiling your own firmware. [Ensure that your build environenment is setup](https://beta.docs.qmk.fm/tutorial/newbs_getting_started).
-* Create 128x32 px black and white pixel art image. The graphic will be rotated 90 degrees clockwise and rendered vertically on the oled display.
-title            |  graphic
-:-------------------------:|:-------------------------:
+Layer | Graphic
+:----:|:----:
 home  |  ![home](https://i.imgur.com/tK3u7ZU.png)
 nav  |  ![nav](https://i.imgur.com/J0FNZfR.png)
 rgb  |  ![rgb](https://i.imgur.com/XK6r6KL.png)
+
+* These instructions require compiling your own firmware. [Ensure that your build environenment is setup](https://beta.docs.qmk.fm/tutorial/newbs_getting_started).
+* Create 128x32 px black and white pixel art image. The graphic will be rotated 90 degrees clockwise and rendered vertically on the oled display.
 * Load the image on [Image2cpp](https://javl.github.io/image2cpp/)
 * Configure as follows:
     * Image settings:

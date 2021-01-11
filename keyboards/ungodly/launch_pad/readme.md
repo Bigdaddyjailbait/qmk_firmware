@@ -72,3 +72,23 @@ See the [build environment setup](https://docs.qmk.fm/#/getting_started_build_to
     	</td>
     </tr>
 </table>
+
+# Custom OLED Displays
+
+* These instructions require compiling your own firmware. [Ensure that your build environenment is setup](https://beta.docs.qmk.fm/tutorial/newbs_getting_started).
+* Create 128x32 px black and white pixel art image. The graphic will be rotated 90 degrees clockwise and rendered vertically on the oled display.
+title            |  graphic
+:-------------------------:|:-------------------------:
+home  |  ![home](https://i.imgur.com/tK3u7ZU.png)
+nav  |  ![nav](https://i.imgur.com/J0FNZfR.png)
+rgb  |  ![rgb](https://i.imgur.com/XK6r6KL.png)
+* Load the image on [Image2cpp](https://javl.github.io/image2cpp/)
+* Configure as follows:
+    * Image settings:
+      * Background color: black
+      * Invert image colors: checked
+    * Output settings:
+      * Code output format: plain bytes
+      * Draw mode: vertical - 1 bit per pixel
+* Copy the generated output into your keymap ([sample code](https://github.com/qmk/qmk_firmware/blob/master/keyboards/ungodly/launch_pad/keymaps/default/keymap.c))
+* Compile the firmware and flash it to your launch pad.

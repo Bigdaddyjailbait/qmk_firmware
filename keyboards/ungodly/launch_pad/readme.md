@@ -57,9 +57,10 @@ See the [build environment setup](https://docs.qmk.fm/#/getting_started_build_to
         	<ul>
             	<li><a href="https://github.com/jpwilliams/midi-mixer-releases/releases">Download the latest version of Midi Mixer</a></li>
             	<li>Run the exe to install the application.</li><li>Launch the MIDI Mixer application.</li>
-            	<li><a href="midi-mixer://share/launch-pad-ungodly-design">Download the Launch Pad preset.</a> The profile will be automatically added to Midi-Mixer.</li>
-            	<li>Navigate to the "Groups" tab and select the audio source you would like to control.</li>
-            	<li><img src="https://imgur.com/MmdDcTm.pngl" alt="Midi Mixer" width="800"></li>
+            	<li>Navigate to the "Profiles" tab and select the "Ungodly Design Launch Pad" preset.</li>
+            	<li>Navigate to the "Groups" tab and select the audio source you would like to control.
+            	<br><img src="https://imgur.com/MmdDcTm.pngl" alt="Midi Mixer" width="800"></li>
+            	<li>Optionally, Navigate to the "Settings" tab and enable/disable "Logarithmic volume curve".</li>
         	</ul>
     	</ul>
     	</td>

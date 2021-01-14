@@ -1,4 +1,3 @@
-
 /* Copyright 2020 Ungodly Design <hello@ungodly.design>
  *
  * This program is free software: you can redistribute it and/or modify
@@ -17,7 +16,6 @@
 #pragma once
 
 #include "quantum.h"
-#define ___ KC_NO
 
 /* This a shortcut to help you visually see your layout.
  *
@@ -56,7 +54,7 @@
     * `-------------------'
   */
 
-#define LAYOUT( \
+#define LAYOUT_ortho_5x4( \
 	k00, k01, k02, k03,  \
 	k10, k11, k12, k13,  \
 	k20, k21, k22, k23,  \

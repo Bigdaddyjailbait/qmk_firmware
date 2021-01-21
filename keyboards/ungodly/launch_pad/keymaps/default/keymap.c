@@ -92,22 +92,15 @@ void encoder_update_user(uint8_t index, bool clockwise) {
 }
 
 // Potentiometer Slider, MIDI Control
-uint8_t divisor = 0;
-uint16_t currentState = 0; // Current state of the pot
-uint16_t pastState = 0; // Previous state of the pot
-uint16_t potVar = 0; // Difference between the current and previous state of the pot
-uint16_t varThreshold = 6; //* Threshold for the potentiometer signal variation
-void matrix_scan_user(void) {
+void slider(void){
   if (divisor++) { // only run the slider function 1/256 times it's called
       return;
   }
-  currentState = analogReadPin(SLIDER_PIN);
-  potVar = abs(currentState-pastState);
-  if(potVar < varThreshold) { // only run pot if within threshold
-      return;
-  }
-  pastState = currentState;
-  midi_send_cc(&midi_device, 2, 0x3E, 0x7F - (pastState >> 3));
+  midi_send_cc(&midi_device, 2, 0x3E, 0x7F - (analogReadPin(SLIDER_PIN) >> 3));
+}
+
+void matrix_scan_user(void) {
+  slider();
 }
 
 // 0.91" OLED, 128x32 resolution

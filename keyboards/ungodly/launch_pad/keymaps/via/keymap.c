@@ -92,6 +92,7 @@ void encoder_update_user(uint8_t index, bool clockwise) {
 }
 
 // Potentiometer Slider, MIDI Control
+uint8_t divisor = 0;
 void slider(void){
   if (divisor++) { // only run the slider function 1/256 times it's called
       return;
